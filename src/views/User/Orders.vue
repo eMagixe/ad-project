@@ -2,7 +2,7 @@
   <v-container>
       <v-layout row>
           <v-flex>
-              <h1>Home</h1>
+              <h1>Orders</h1>
           </v-flex>
       </v-layout>
   </v-container>
@@ -13,3 +13,7 @@ export default {
 
 }
 </script>
+
+<style>
+
+</style>
