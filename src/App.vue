@@ -16,7 +16,9 @@
         </v-navigation-drawer>
         <v-app-bar app dark color="primary">
             <v-app-bar-nav-icon @click="drawer = !drawer" class="hidden-md-and-up"></v-app-bar-nav-icon>
-            <v-toolbar-title>Ad application</v-toolbar-title>
+            <v-toolbar-title>
+                <router-link to="/" tag="span" class="pointer">Ad application</router-link>
+            </v-toolbar-title>
             <div class="flex-grow-1"></div>
             <v-toolbar-items class="hidden-sm-and-down">
                 <v-btn text v-for="button in links" :key="button.title" :to="button.url">
@@ -49,3 +51,9 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+    .pointer {
+        cursor: pointer;
+    }
+</style>
